@@ -1,0 +1,224 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "poppins-bolditalic";
+  src: url(./assets/fonts/Poppins-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "poppins-extrabold";
+  src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "poppins-extrabolditalic";
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "poppins-italic";
+  src: url(./assets/fonts/Poppins-Italic.ttf);
+}
+
+@font-face {
+  font-family: "poppins-regular";
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+/* Components */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--light-grey);
+}
+
+.calculator-container {
+  background: var(--white);
+  width: 750px;
+  height: 550px;
+  border-radius: 10px 10px 200px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box {
+  display: flex;
+  margin-right: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.day-input {
+  position: relative;
+  width: 150px;
+  margin: 0px 25px;
+}
+
+.day-input input {
+  height: 50px;
+  width: 100%;
+  font-family: "poppins-extrabold";
+  font-size: x-large;
+  text-align: center;
+}
+
+.day-input label {
+  position: absolute;
+  right: 110px;
+  bottom: 70px;
+  font-family: "poppins-bold";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--smokey-grey);
+}
+
+.month-input {
+  position: relative;
+  width: 150px;
+  margin: 0 25px;
+}
+
+.month-input input {
+  height: 50px;
+  width: 100%;
+  font-family: "poppins-extrabold";
+  font-size: x-large;
+  text-align: center;
+}
+
+.month-input label {
+  position: absolute;
+  right: 88px;
+  bottom: 70px;
+  font-family: "poppins-bold";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--smokey-grey);
+}
+
+.year-input {
+  position: relative;
+  width: 150px;
+  margin: 0 25px;
+}
+
+.year-input input {
+  height: 50px;
+  width: 100%;
+  font-family: "poppins-extrabold";
+  font-size: x-large;
+  text-align: center;
+}
+
+.year-input label {
+  position: absolute;
+  right: 110px;
+  bottom: 70px;
+  font-family: "poppins-bold";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--smokey-grey);
+}
+
+::placeholder {
+  text-align: center;
+  font-family: "poppins-extrabold";
+  font-size: large;
+}
+
+.placeholder-day {
+  color: white;
+  font-family: "poppins-italic";
+  font-size: 0.8rem;
+}
+
+.placeholder-month {
+  color: white;
+  font-family: "poppins-italic";
+  font-size: 0.8rem;
+}
+
+.placeholder-year {
+  color: white;
+  font-family: "poppins-italic";
+  font-size: 0.8rem;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--purple);
+  border: none;
+  margin-left: 600px;
+  cursor: pointer;
+}
+
+.button-breakline {
+  position: relative;
+}
+
+hr {
+  position: absolute;
+  width: 600px;
+  top: 50%;
+  color: var(--light-grey);
+}
+
+button:hover {
+  background-color: var(--off-black);
+}
+
+.output-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+h1 {
+  margin-left: 70px;
+  font-family: "poppins-extrabolditalic";
+  font-size: 3.5rem;
+}
+
+h1 span {
+  color: var(--purple);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
